@@ -1,0 +1,80 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css"> </head>
+
+<body>
+    <div class="container-fluid titoli">
+        <div class="col-xs-12">
+            <h1>Pedala.com</h1>
+            <ul class='list-unstyled'>
+                <h3>Il più grande venditore di bici della capitale</h3> </div>
+    </div>
+    <div class="container-fluid bici">
+        <h4>I nostri gioielli</h4>
+        <div class="col-xs-12">
+            <div class="row galleria">
+                <div class="col-xs-3">
+                    <div class="thumbnail"> <img src="./bici/BBKBECLICKCELEBR-01.jpg" alt="biciuno">
+                        <div class="caption">
+                            <button class='btn btn-primary show-caratteristiche'>Mostra le caratteristiche</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="thumbnail"> <img src="./bici/bici-elettriche-estreme.jpg" alt="bicidue">
+                        <div class="caption">
+                            <button class='btn btn-primary show-caratteristiche'>Mostra le caratteristiche</button>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="thumbnail"> <img src="./bici/bici-da-corsa-rb1000-team-edition.jpg" alt="bicitre">
+                        <div class="caption">
+                            <button class='btn btn-primary show-caratteristiche'>Mostra le caratteristiche</button>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="thumbnail"> <img src="./bici/LABICISEVENTY_UN_NEROROSSO.jpg" alt="biciquattro">
+                        <div class="caption">
+                            <button class='btn btn-primary show-caratteristiche'>Mostra le caratteristiche</button>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <li id='caratteristiche' class='confirmation'> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid contatti">
+        <div class="col-xs-12">
+            <p class="clienti">I nostri clienti sono sempre soddisfatti, contattatali per ricevere recensioni</p>
+            <div class="bottone">
+                <button class='btn btn-success show-users'>Clicca qui per i contatti</button>
+                <ul class='list-unstyled' id='user-list'></ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script id="entry-template" type="text/x-handlebars-template">
+        <div class="entry">
+            <p class="nomi">{{id}}-{{name}}</p>
+            <div class="email">{{email}} </div>
+        </div>
+    </script>
+</body>
+
+</html>
